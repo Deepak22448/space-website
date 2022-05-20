@@ -1,0 +1,123 @@
+.nav_wrapper{
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding:  2.7rem 0rem 0rem 3rem;
+}
+
+
+.nav_wrapper .left .circle_logo{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius:50% ;
+}
+.nav_wrapper .left{
+    padding: 2rem;
+}
+
+.nav_number{
+    padding-right: .5rem ;
+}
+.nav_links{
+    display: flex;
+    padding: 0rem 7vw 0rem 5vw;
+    letter-spacing: 3px;
+    background-color: rgba(128, 128, 128, 0.161);
+    backdrop-filter: blur(10px);
+    transition: .3s ease-in-out;
+}
+
+.nav_link{
+    list-style: none;
+    margin: 0px 1.3rem;
+    padding: 2.5rem .3rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.nav_link:hover{
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+.menu_btn{
+    display: none;
+    width: 45px;
+    position: relative;
+    height: 50px;
+    z-index: 5;
+    
+}
+.menu_btn  span{
+    position: absolute;
+    height: 4px;
+    width: 80% ;
+    border-radius: 3px;
+    background: #D0D6F9;
+    display: block;
+    
+}
+    .line1{
+        transform: translateY(-10px);
+    }
+    .line2{
+        transform: translateY(0px);
+    }
+    .line3{
+        transform: translateY(10px);
+    }
+    
+
+@media screen and (min-width:0px) and (max-width:480px){
+    html{
+        font-size: 6px;
+    }
+    .nav_wrapper{
+        padding: 0px;
+    }
+    .menu_btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .nav_links{
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding-top: 15rem ;
+        opacity: 0;
+        /* transform: translateX(100%); */
+    }
+      .nav_links.active{
+        display: flex;
+        /* transform: translateX(0px); */
+        opacity: 1;
+    }
+   
+    ul{
+        flex-direction: column;
+        height: 100vh;
+    }
+    
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    html{
+        font-size: 7px;
+    }
+    .nav_wrapper{
+        padding: 0px;
+    }
+    .nav_links{
+        padding: 0px 2rem;
+    }
+  .nav_number{
+      display: none;
+  }
+}
