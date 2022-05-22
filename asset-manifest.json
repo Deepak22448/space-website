@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/space-website/static/css/main.736eb5db.css",
+    "main.js": "/space-website/static/js/main.7a13a248.js",
+    "static/media/background-home-desktop.jpg": "/space-website/static/media/background-home-desktop.cdf3864ecbfdf20e8c3b.jpg",
+    "static/media/background-destination-desktop.jpg": "/space-website/static/media/background-destination-desktop.468b922c69bf5499b4bc.jpg",
+    "static/media/background-home-tablet.jpg": "/space-website/static/media/background-home-tablet.bc9efcc3281fa6801077.jpg",
+    "static/media/background-crew-desktop.jpg": "/space-website/static/media/background-crew-desktop.88a3c692fd34eb311e04.jpg",
+    "static/media/background-technology-desktop.jpg": "/space-website/static/media/background-technology-desktop.b7b589b3c0c5ef0811d4.jpg",
+    "static/media/background-crew-tablet.jpg": "/space-website/static/media/background-crew-tablet.16d51cf61e98ce45eb61.jpg",
+    "static/media/background-home-mobile.jpg": "/space-website/static/media/background-home-mobile.13f7adecbcb3c3f170d8.jpg",
+    "static/media/background-technology-tablet.jpg": "/space-website/static/media/background-technology-tablet.48c38b028217ee0096c4.jpg",
+    "static/media/background-destination-mobile.jpg": "/space-website/static/media/background-destination-mobile.e0131e27e751ead1a922.jpg",
+    "index.html": "/space-website/index.html",
+    "main.736eb5db.css.map": "/space-website/static/css/main.736eb5db.css.map",
+    "main.7a13a248.js.map": "/space-website/static/js/main.7a13a248.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.736eb5db.css",
+    "static/js/main.7a13a248.js"
+  ]
+}
