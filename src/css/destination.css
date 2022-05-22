@@ -1,0 +1,118 @@
+.destination{
+    background: url("../../public/assets/destination/background-destination-desktop.jpg") ;
+    background-size: cover;
+    min-height: 100vh;
+   
+}
+
+.destination_overlay{
+    padding-top: clamp(10rem,25vh,15rem);
+    padding-inline: clamp(2rem,8vw,6rem) ;
+    color: white;
+}
+
+.destination_overlay > h1{
+    font-size: 2.8rem;
+    letter-spacing: 0.4rem;
+    font-family: 'Barlow Condensed';
+    height: auto;
+}
+
+h1 > span{
+    font-family: 'Barlow Condensed';
+    font-weight: 700;
+    font-size: 2.8ren;
+    line-height: 3.4rem;
+    letter-spacing: 4.725px;
+    color: #FFFFFF;
+    opacity: 0.25;
+    padding-right: 1rem ;
+}
+
+.destination_img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.destination_left{
+    max-width: 500px;
+    width: clamp(10rem, 30vw, 50rem);
+    height: auto;
+
+}
+
+.destination_article{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7rem 0;
+}
+.destination_right{
+    max-width: 500px;
+    height: 300px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+.destination_right > nav > ul{
+    gap: 1rem;
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav > ul > li.destination_right_link{
+    cursor: pointer;
+}
+
+
+.planet_name{
+    font-size: 10rem;
+    font-family: 'Bellefair';
+}
+.planet_description{
+    font-family: 'Barlow';
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    color: #D0D6F9;
+    padding-bottom: 2rem;
+    min-height: 128px;
+}
+
+.destination_right_bottom{
+    padding-top: 0rem;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #383B4B;;
+}
+
+.destination_right_bottom > div > h6{
+    font-size: 2rem;
+    line-height: 3rem;
+    font-family: 'Bellefair';
+}
+.destination_right_bottom > div > p{
+    font-size: 2.8rem;
+    line-height: 3rem;
+    font-family: 'Bellefair';
+}
+
+@media screen and (max-width:480px){
+    .destination{
+        background: url("../../public/assets/destination/background-destination-mobile.jpg") ;
+        background-size: cover;
+        min-height: 100vh;
+       
+    } 
+}
+@media screen  and (max-width:768px){
+    .destination_article{
+        flex-direction: column;
+        justify-content: stretch;
+    }
+}

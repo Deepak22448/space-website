@@ -48,7 +48,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10% 10% 0px 10%;
+    padding-top: clamp(15rem, 25vh , 28rem);
+    padding-bottom: 4rem;
+    padding-inline: 10%;
 }
 
 .home_explore_circle{
@@ -74,7 +76,7 @@
 
 
 /* mobiles */
-@media screen and (min-width:320px) and (max-width:480px){
+@media screen  and (max-width:480px){
     .home_background{
         background: url(../../public/assets/home/background-home-mobile.jpg);
         background-repeat: no-repeat;
@@ -90,10 +92,11 @@
     }
  
     .home_wrapper{
-        padding-top: 25%;
+        /* padding-top: 25%; */
         flex-direction: column;
         justify-content: start;
     }
+
  
     .home_wrapper_left {
         margin-bottom: 10%;
@@ -120,11 +123,15 @@
        text-align: center;
    }
 
-   .home_wrapper{
+   /* .home_wrapper{
        padding-top: 20%;
        flex-direction: column;
        justify-content: start;
-   }
+   } */
+   .home_wrapper{
+    flex-direction: column;
+    justify-content: start;
+}
 
    .home_wrapper_left {
        margin-bottom: 10%;

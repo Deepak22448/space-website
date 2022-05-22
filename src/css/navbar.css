@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@600&display=swap');
+
 .nav_wrapper{
     position: absolute;
     width: 100vw;
@@ -8,14 +10,15 @@
     color: white;
     padding:  2.7rem 0rem 0rem 3rem;
 }
-
-
-.nav_wrapper .left .circle_logo{
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    border-radius:50% ;
+.logo_name {
+    font-size: 2.8rem;
+    letter-spacing: 3px;
+    font-family: 'Akshar', sans-serif;
+    border: 2px solid white;
+    padding: 5px;
+    cursor: pointer;
 }
+
 .nav_wrapper .left{
     padding: 2rem;
 }
@@ -61,16 +64,31 @@
     display: block;
     
 }
-    .line1{
-        transform: translateY(-10px);
-    }
-    .line2{
-        transform: translateY(0px);
-    }
-    .line3{
-        transform: translateY(10px);
-    }
-    
+.menu_line{
+    transition: .1s ease-in;
+}
+.line1{
+    transform: translateY(-10px);
+}
+.line2{
+    transform: translateY(0px);
+}
+.line3{
+    transform: translateY(10px);
+}
+
+.menu_btn.active .line1,.line2{
+    transform: translateY(0);
+}
+.menu_btn.active .line1{
+    transform: rotate(45deg);
+}
+.menu_btn.active .line2{
+    transform: rotate(-45deg);
+}
+.menu_btn.active .line3{
+    transform: rotate(45deg);
+}
 
 @media screen and (min-width:0px) and (max-width:480px){
     html{
@@ -85,22 +103,32 @@
         align-items: center;
         cursor: pointer;
     }
+    .nav_link{
+        transform: scale(0);
+        transition: all .4s;
+    }
+    .nav_link.active{
+        transform: scale(1.2);
+        transform-origin: bottom;
+    }
     .nav_links{
         display: flex;
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         padding-top: 15rem ;
         opacity: 0;
-        /* transform: translateX(100%); */
+        transform: translateX(100%);
+        transition: 1s;
+        transition-delay: .1s;
     }
       .nav_links.active{
         display: flex;
-        /* transform: translateX(0px); */
+        transform: translateX(0px);
         opacity: 1;
     }
    
-    ul{
+    ul.nav_links{
         flex-direction: column;
         height: 100vh;
     }
