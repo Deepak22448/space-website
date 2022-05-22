@@ -62,7 +62,7 @@ h1 > span{
     font-size: 1.7rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     list-style: none;
 }
 
